@@ -13,3 +13,8 @@ export class AppComponent {
 $(document).ready(() => {
   console.log("Jquery works!");
 })
+
+// CORS Policy test - Same-origin policy: Bu istek APIye hiç gitmedi, browser durdurdu
+$.get("https://localhost:5001/api/products", (data: any) => {
+  console.log(data);
+})
