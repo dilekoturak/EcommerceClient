@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare var $: any // Declare Jquery
 
 @Component({
   selector: 'app-root',
@@ -8,3 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'EcommerceClient';
 }
+
+$(document).ready(() => {
+  console.log("Jquery works!");
+})
